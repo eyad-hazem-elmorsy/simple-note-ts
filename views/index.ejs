@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Notes page</title>
+    </head>
+    <body>
+        <h1>Notes:</h1>
+        <ul>
+            <% for (note of notes) { %>
+                <li>
+                    <%= note.note %>
+                </li>
+            <% } %>
+        </ul>
+        <a href="/add">Add new note</a>
+    </body>
+</html>
